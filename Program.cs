@@ -59,7 +59,7 @@ namespace Mongo
            var tmp = collection.ToList();
            var timerSecondQuery = Stopwatch.StartNew();
 
-           var secondQuery = tmp.GroupBy(x => new 
+           var secondQuery = collection.ToList().GroupBy(x => new 
                    {
                        x.Guest.PersonalId,
                        x.StartDate

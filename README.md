@@ -33,5 +33,5 @@ config = {
 rs.initiate(config)
 
 sudo docker build -t mono-app .
-suod docker run --net my-mongo-cluster mono-app
+sudo docker run --net my-mongo-cluster mono-app
 ```
